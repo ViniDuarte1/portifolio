@@ -1,0 +1,138 @@
+/* HEADER *//* HEADER */
+/* HEADER *//* HEADER */
+/* HEADER *//* HEADER */
+
+/* header geral */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.myheader {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(107, 107, 107) 0%, rgb(228, 228, 228) 50%, rgba(107, 107, 107) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    height: 100px;
+}
+
+/* logo */
+.headerlogo-div {
+    margin: 40px;
+}
+
+.header-logo {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+
+/* nav menu */
+.divmenu {
+    max-width: 50px;
+    max-height: 500px;
+    margin: 40px;
+}
+
+.menu {
+    flex: 1;
+    text-align: right;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease 0s;
+}
+
+
+
+/* texto colorido */
+.dinamictext {
+    font-family: cursive;
+    font-size: 50px;
+    background: conic-gradient(blue, purple, rgb(179, 0, 0), rgb(179, 0, 0), purple, blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 2000px 2000px;
+    animation: rgb 5s linear infinite;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 1vh;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .dinamictext {
+        display: none;
+    }
+}
+
+@keyframes rgb {
+    0% {
+        background-position: 0 0;
+    }
+
+    25% {
+        background-position: 0 100%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    75% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* TITULO PRINCIPAL *//* TITULO PRINCIPAL */
+/* TITULO PRINCIPAL *//* TITULO PRINCIPAL */
+/* TITULO PRINCIPAL *//* TITULO PRINCIPAL */
+
+/* imagem de fundo */
+.titleimage {
+    background-attachment: fixed;
+    background-size: 100%;
+    background-image: url(../img/pexels-thisisengineering-3861976.jpg);
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+/* TITULO PRINCIPAL */
+.maintitle {
+    text-transform: uppercase;
+    font-family: cursive;
+    color: white;
+    text-align: center;
+    font-size: 100px;
+    padding-top: 100px;
+}
+
