@@ -11,6 +11,7 @@ header {
     z-index: 1;
 }
 
+/* div do header */
 .myheader {
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgb(107, 107, 107) 0%, rgb(228, 228, 228) 50%, rgba(107, 107, 107) 100%);
@@ -34,15 +35,56 @@ header {
 
 
 /* nav menu */
+
+
+/* div que envolve menu */
 .divmenu {
-    max-width: 50px;
-    max-height: 500px;
+    display: flex;
     margin: 40px;
+    align-items: center;
 }
 
+.divmenu label{
+    width: 20px;
+    height: 20px;
+}
+
+.divmenu a {
+    margin: 10px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+
+/* checkbox */
+.menucheck {
+    display: none;
+}
+
+.divmenu input:checked~.menu {
+    display: block;
+}
+
+/* span */
+.menu_options{
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/Menu.svg);
+    display: inline-block;
+}
+
+
+/* navmenu */
 .menu {
     flex: 1;
     text-align: right;
+    display: none;
+    position: absolute;
+    top: 100%;
 }
 
 .menu ul {
@@ -83,7 +125,7 @@ header {
     margin-top: 1vh;
 }
 
-
+/* responsivo do texto colorido */
 @media screen and (max-width: 1000px) {
     .dinamictext {
         display: none;
