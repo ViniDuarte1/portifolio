@@ -1,0 +1,25 @@
+.textabout {
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.textabout p {
+    max-width: 900px;
+    text-align: justify;
+}
+
+.mypicdiv img {
+    width: 200px;
+    height: 200px;
+    margin: 0 40px;
+}
+
+.aboutmediv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
